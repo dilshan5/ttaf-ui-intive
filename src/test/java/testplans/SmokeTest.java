@@ -14,7 +14,8 @@ import org.junit.runner.RunWith;
         glue = {"step_definitions"},
         format = {
                 "pretty",
-                "json:target/cucumber-reports/smokeTestResults.json"
+                "json:target/cucumber-reports/smokeTestResults.json",
+                "html:target/cucumber-reports"
         },
         monochrome = false,
         tags = {"@smoke", "~@wip"}

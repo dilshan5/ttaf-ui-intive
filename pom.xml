@@ -73,4 +73,11 @@
             </plugin>
         </plugins>
     </build>
+    <developers>
+        <developer>
+            <id>dilshanf</id>
+            <name>Dilshan Fernando</name>
+            <email>dilshan.fdo@gmail.com</email>
+        </developer>
+    </developers>
 </project>
