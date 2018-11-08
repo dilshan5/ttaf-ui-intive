@@ -1,0 +1,18 @@
+# Igonre IDE metadata directory with all included files
+*.idea/
+*iml
+*.ipr
+*.iws
+*errorLogs/
+*screenshots/
+*logs/
+*/.idea/
+*/*.iml
+*/*.iws
+*/*.ipr
+target
+*/logs/
+*/.txt/
+*/.jpg/
+*/errorlogs/
+*/screenshots/
