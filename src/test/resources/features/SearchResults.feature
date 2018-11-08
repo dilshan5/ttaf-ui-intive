@@ -1,4 +1,4 @@
-Feature: Verify search results page
+Feature: Verify Search Results Page 
 
   @complete
   Scenario: Home page -  Verify Search keyword is displayed

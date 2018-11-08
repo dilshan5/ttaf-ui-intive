@@ -24,7 +24,6 @@ public class ProductDisplayPageSteps extends TestBase {
         LOGGER.info("I am on the Product Display Page");
     }
 
-
     @Given("^I click Add to cart button$")
     public void i_click_Add_to_cart_button() throws Throwable {
         productDisplayPage.add_item();
