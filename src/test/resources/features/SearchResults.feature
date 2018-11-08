@@ -1,6 +1,6 @@
-Feature: Verify Search Results Page 
+Feature: Verify Search Results Page
 
-  @complete
+  @smoke @complete
   Scenario: Home page -  Verify Search keyword is displayed
     Given I visit the web site as a guest user
     And I search for "snickers"
@@ -17,7 +17,7 @@ Feature: Verify Search Results Page
     | xcvdv                              |
     | <script>alert('hi there')</script> |
 
-  @complete
+  @smoke @complete
   Scenario: Search Result Page - Verify Sort By functionality Price (low-high)
     Given I visit the web site as a guest user
     When I search for "twix"

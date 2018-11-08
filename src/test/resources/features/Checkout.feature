@@ -2,7 +2,7 @@ Feature:  As A User
   I want to search for sweets on amazon
   So I can find my preferred brands.
 
-  @complete
+  @smoke @complete
   Scenario: Verify Guest checkout for multiple item
     Given I visit the web site as a guest user
     When I search for following Candies and ADD the cheapest candy of each

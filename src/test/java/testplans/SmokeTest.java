@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports/Regression_Test.html",
         },
         monochrome = false,
-        tags = {"@complete", "~@wip"}
+        tags = {"@smoke", "~@wip"}
 )
 public class SmokeTest {
 }
