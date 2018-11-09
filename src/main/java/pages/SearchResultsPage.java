@@ -33,7 +33,7 @@ public class SearchResultsPage extends BasicPage {
     @FindBy(id = "s-results-list-atf")
     private WebElement products;
 
-    @FindBy(css = "select#sort.a-spacing-top-mini")
+    @FindBy(id = "sort")
     private WebElement sort_drop_down;
 
     public SearchResultsPage(WebDriver driver) throws Exception {

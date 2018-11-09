@@ -79,6 +79,7 @@ public class ProductDisplayPage extends BasicPage {
     private void click_add_cart_button() throws Exception {
         if (add_to_cart_button.isSelected()) {
             add_to_cart_button.click();
+            LOGGER.info("Info: Add the item to the Cart.");
         }
     }
 
