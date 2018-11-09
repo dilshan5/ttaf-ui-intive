@@ -77,6 +77,7 @@
         <repository>
             <id>ttaf-ui-core-mvn-repo</id>
             <url>https://raw.github.com/dilshan5/ttaf-ui-core/mvn-repo/</url>
+            <layout>default</layout>
             <releases>
                 <enabled>false</enabled>
                 <updatePolicy>always</updatePolicy>
@@ -87,6 +88,21 @@
             </snapshots>
         </repository>
     </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>ttaf-ui-core-mvn-repo</id>
+            <url>https://raw.github.com/dilshan5/ttaf-ui-core/mvn-repo/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>false</enabled>
+                <updatePolicy>always</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
     <developers>
         <developer>
             <id>dilshanf</id>
