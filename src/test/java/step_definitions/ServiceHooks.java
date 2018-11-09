@@ -1,6 +1,6 @@
 package step_definitions;
 
-import com.trivago.qa.ttafuicore.test.TestBase;
+import com.automation.qa.ttafuicore.test.TestBase;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 

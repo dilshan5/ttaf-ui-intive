@@ -10,12 +10,12 @@
 
 
     <properties>
-        <ttaf.ui.core.version>1.0.2-SNAPSHOT</ttaf.ui.core.version>
+        <ttaf.ui.core.version>1.0.1-SNAPSHOT</ttaf.ui.core.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.trivago.qa</groupId>
+            <groupId>com.automation.qa</groupId>
             <artifactId>ttaf-ui-core</artifactId>
             <version>${ttaf.ui.core.version}</version>
         </dependency>

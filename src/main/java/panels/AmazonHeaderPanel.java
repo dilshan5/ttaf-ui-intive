@@ -1,6 +1,6 @@
 package panels;
 
-import com.trivago.qa.ttafuicore.page.BasicPage;
+import com.automation.qa.ttafuicore.page.BasicPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

@@ -1,6 +1,6 @@
 package pages;
 
-import com.trivago.qa.ttafuicore.page.BasicPage;
+import com.automation.qa.ttafuicore.page.BasicPage;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,7 +1,7 @@
 package step_definitions;
 
 import com.sun.org.apache.xml.internal.serialize.LineSeparator;
-import com.trivago.qa.ttafuicore.test.TestBase;
+import com.automation.qa.ttafuicore.test.TestBase;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
