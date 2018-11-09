@@ -70,18 +70,19 @@ public class SearchResultsPageSteps extends TestBase {
 
     @When("^I search for following Candies and ADD the cheapest candy of each$")
     public void i_search_for_following_Candies_and_ADD_the_cheapest_candy_of_each(DataTable candy) throws Throwable {
-        //Write the code to handle Data Table
         List<List<String>> list = candy.asLists(String.class);
         amazonHomePage = new AmazonHomePage(getDriver());
+        productDisplayPage = new ProductDisplayPage(getDriver());
+
+        //Write the code to handle Data Table
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i).get(0));
             amazonHomePage.amazonHeaderPanel.search_for(list.get(i).get(0));
-            i_should_be_in_page();
-            i_verify_the_Sort_By_functionality("Price: Low to High");
-            i_click_on_Product_Thumbnail_in_search_results_page("first");
-            productDisplayPage = new ProductDisplayPage(getDriver());
+            i_should_be_in_page();//verify user is on "Search Result" page
+            i_verify_the_Sort_By_functionality("Price: Low to High");//sort the search results
+            i_click_on_Product_Thumbnail_in_search_results_page("first");//click on the Nth item
             productDisplayPage.verify_Current_Page();
-            productDisplayPage.add_item();
+            productDisplayPage.add_item();//add the item to Cart
         }
 
     }
