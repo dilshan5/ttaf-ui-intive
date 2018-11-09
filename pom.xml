@@ -88,6 +88,7 @@
             </snapshots>
         </repository>
     </repositories>
+    <!--specify a remote location of where Maven can find new plugins-->
     <pluginRepositories>
         <pluginRepository>
             <id>ttaf-ui-core-mvn-repo</id>

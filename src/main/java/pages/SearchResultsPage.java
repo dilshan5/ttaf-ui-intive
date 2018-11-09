@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 public class SearchResultsPage extends BasicPage {
     private static final Logger LOGGER = Logger.getLogger(String.valueOf(SearchResultsPage.class));
     public AmazonHeaderPanel amazonHeaderPanel;
-    private WebDriverWait wait = new WebDriverWait(driver, 60);
+    private WebDriverWait wait = new WebDriverWait(driver, 100);
 
     @FindBy(id = "s-result-count")
     private WebElement search_keyword;
