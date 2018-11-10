@@ -77,7 +77,7 @@ public class ProductDisplayPage extends BasicPage {
      * @throws Exception
      */
     private void click_add_cart_button() throws Exception {
-        if (add_to_cart_button.isSelected()) {
+        if (add_to_cart_button.isDisplayed()) {
             add_to_cart_button.click();
             LOGGER.info("Info: Add the item to the Cart.");
         }
@@ -109,6 +109,13 @@ public class ProductDisplayPage extends BasicPage {
             for (WebElement temp : options) {
                 temp.click();
                 LOGGER.info("Info: Checking other options...");
+                //If "Add to Cart" button is available
+                try {
+                    click_add_cart_button();
+                    break;
+                } catch (Exception Ex) {
+                    LOGGER.info("Info: Checking other options...");
+                }
                 //check if there a buying options available
                 wait.until(ExpectedConditions.visibilityOf(buy_option_button));
                 click_allBuying_options_button();

@@ -15,7 +15,7 @@ Feature:  As A User
   @complete
   Scenario: Verify Guest checkout for single item
     Given I visit the web site as a guest user
-    When I search for "Skittles"
+    When I search for "cakes"
     Then I should be in Search Result page
     And I verify the Sort By "Price: Low to High" functionality
     And I click on "first" Product Thumbnail in search results page

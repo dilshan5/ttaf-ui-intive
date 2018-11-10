@@ -64,6 +64,11 @@ public class SearchResultsPageSteps extends TestBase {
                 searchResultsPage.click_on_any_product(0);
                 break;
         }
+        productDisplayPage = new ProductDisplayPage(getDriver());
+        //If there are 'Shop by Category' is available for the searchKey
+        if (!(productDisplayPage.verify_Current_Page())){
+            searchResultsPage.click_on_any_product(0);
+        }
         LOGGER.info("I clicked on " + step + " Item");
     }
 
@@ -72,7 +77,6 @@ public class SearchResultsPageSteps extends TestBase {
     public void i_search_for_following_Candies_and_ADD_the_cheapest_candy_of_each(DataTable candy) throws Throwable {
         List<List<String>> list = candy.asLists(String.class);
         amazonHomePage = new AmazonHomePage(getDriver());
-        productDisplayPage = new ProductDisplayPage(getDriver());
 
         //Write the code to handle Data Table
         for (int i = 0; i < list.size(); i++) {
