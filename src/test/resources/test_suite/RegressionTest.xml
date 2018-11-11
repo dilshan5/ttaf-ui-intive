@@ -2,7 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="intive - Regression">
+    <listeners>
+        <listener class-name="com.automation.qa.ttafuicore.util.LocalWebDriverListener"/>
+    </listeners>
     <test name="Regression - All">
+        <parameter name="browserName" value="chrome"/>
         <classes>
                 <class name="runner.RegressionTest"/>
         </classes>

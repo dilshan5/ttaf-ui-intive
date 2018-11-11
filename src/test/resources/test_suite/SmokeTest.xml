@@ -2,9 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="intive - SmokeTest">
-    <test name="Regression - All">
-        <classes>
-                <class name="runner.SmokeTest"/>
-        </classes>
-    </test>
+<listeners>
+    <listener class-name="com.automation.qa.ttafuicore.util.LocalWebDriverListener"/>
+</listeners>
+<test name="SmokeTest - All">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+        <class name="runner.SmokeTest"/>
+    </classes>
+</test>
 </suite>
