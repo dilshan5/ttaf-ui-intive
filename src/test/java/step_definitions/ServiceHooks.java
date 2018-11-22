@@ -17,9 +17,9 @@ public class ServiceHooks {
     public void after(Scenario scenario) throws Exception {
         RemoteWebDriver driver = DriverManager.getDriver();
         if (driver != null) {
+            Constant.SCENARIO_NAME = scenario.getName(); //set the scenario name to create a node in Reporter
             driver.quit();
             LOGGER.info("TTAF MESSAGE: Closing the " + Constant.BROWSER_NAME + " browser...");
         }
-        Constant.SCENARIO_NAME = scenario.getName(); //set the scenario name to create a node in Reporter
     }
 }
