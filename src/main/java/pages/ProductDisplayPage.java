@@ -2,8 +2,8 @@ package pages;
 
 import com.automation.qa.ttafuicore.page.BasicPage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -41,7 +41,7 @@ public class ProductDisplayPage extends BasicPage {
      * @param driver
      * @throws Exception
      */
-    public ProductDisplayPage(WebDriver driver) throws Exception {
+    public ProductDisplayPage(RemoteWebDriver driver) throws Exception {
         super(driver);
         //Initialize Elements
         PageFactory.initElements(driver, this);
@@ -60,8 +60,8 @@ public class ProductDisplayPage extends BasicPage {
             LOGGER.info("WARN: Add to cart button is not available for this product.");
         }
         try {
-             //when there is no "Add to cart" button
-           click_allBuying_options_button();
+            //when there is no "Add to cart" button
+            click_allBuying_options_button();
         } catch (Exception Ex) {
             LOGGER.info("WARN: Buying option is not available for this product.");
         }
@@ -74,6 +74,7 @@ public class ProductDisplayPage extends BasicPage {
 
     /**
      * Click on the Add to cart button
+     *
      * @throws Exception
      */
     private void click_add_cart_button() throws Exception {
@@ -85,6 +86,7 @@ public class ProductDisplayPage extends BasicPage {
 
     /**
      * Select All Other options available for thr Product and Add the Item
+     *
      * @throws Exception
      */
     private void click_allBuying_options_button() throws Exception {
@@ -97,7 +99,8 @@ public class ProductDisplayPage extends BasicPage {
     }
 
     /**
-     *  Select Other options available for thr Product and Add the Item
+     * Select Other options available for thr Product and Add the Item
+     *
      * @throws Exception
      */
     private void select_otherBuying_options() throws Exception {

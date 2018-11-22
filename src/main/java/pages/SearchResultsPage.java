@@ -2,8 +2,8 @@ package pages;
 
 import com.automation.qa.ttafuicore.page.BasicPage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,7 +14,6 @@ import panels.AmazonHeaderPanel;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 
 /**
  * Created by DilshanF on 11/7/2018.
@@ -36,7 +35,7 @@ public class SearchResultsPage extends BasicPage {
     @FindBy(id = "sort")
     private WebElement sort_drop_down;
 
-    public SearchResultsPage(WebDriver driver) throws Exception {
+    public SearchResultsPage(RemoteWebDriver driver) throws Exception {
         super(driver);
         //Initialize Elements
         PageFactory.initElements(driver, this);
@@ -67,6 +66,7 @@ public class SearchResultsPage extends BasicPage {
 
     /**
      * Select value from dropdown menu
+     *
      * @param type
      * @throws Exception
      */

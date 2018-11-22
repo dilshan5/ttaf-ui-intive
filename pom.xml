@@ -7,7 +7,8 @@
     <artifactId>ttaf-ui-intive</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <ttaf.ui.core.version>1.0.2-SNAPSHOT</ttaf.ui.core.version>
+        <ttaf.ui.core.version>1.0.4-SNAPSHOT</ttaf.ui.core.version>
+        <maven.surefire.plugin>2.21.0</maven.surefire.plugin>
     </properties>
     <dependencies>
         <dependency>
@@ -16,19 +17,20 @@
             <version>${ttaf.ui.core.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>3.13.0</version>
-        </dependency>
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>1.2.5</version>
-        </dependency>
-        <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
-            <version>1.2.5</version>
+            <version>4.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>3.1.2</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
     <build>
@@ -52,7 +54,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
-                        <version>2.19</version>
+                        <version>${maven.surefire.plugin}</version>
                         <configuration>
                             <testFailureIgnore>true</testFailureIgnore>
                             <suiteXmlFiles>
@@ -73,7 +75,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
-                        <version>2.19</version>
+                        <version>${maven.surefire.plugin}</version>
                         <configuration>
                             <testFailureIgnore>true</testFailureIgnore>
                             <suiteXmlFiles>
@@ -121,6 +123,9 @@
             <id>dilshanf</id>
             <name>Dilshan Fernando</name>
             <email>dilshan.fdo@gmail.com</email>
+            <roles>
+                <role>Owner</role>
+            </roles>
         </developer>
     </developers>
 </project>

@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="intive - Regression">
+<suite name="TTAF - RegressionTest in Parallel" parallel="methods" verbose="1" configfailurepolicy="continue"
+       thread-count="5">
     <listeners>
-        <listener class-name="com.automation.qa.ttafuicore.util.LocalWebDriverListener"/>
+        <!--
+        This TestNG listener takes care of setting up and tearing down the Remote Selenium driver,
+        and it also changes test names in the final TestNG HTML report.
+    -->
+        <listener class-name="com.automation.qa.ttafuicore.listener.ExtentTestNgFormatter"/>
     </listeners>
-    <test name="Regression - All">
-        <parameter name="browserName" value="firefox"/>
+
+    <parameter name="system.info" value="runner.MySystemInfo"/>
+    <parameter name="report.config" value="src/test/resources/config/extent-config.xml"/>
+
+    <test name="Regression - Windows Chrome Browser">
+        <!-- If you want to be more specific, replace this with a list of test classes you'd like to run -->
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="browserVersion" value="ANY"/>
+        <parameter name="platform" value="windows"/>
         <classes>
-                <class name="runner.RegressionTest"/>
+            <class name="runner.RegressionTest"/>
         </classes>
     </test>
 </suite>

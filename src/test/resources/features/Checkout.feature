@@ -2,7 +2,7 @@ Feature:  As A User
   I want to search for sweets on amazon
   So I can find my preferred brands.
 
-  @smoke @complete
+  @regression
   Scenario: Verify Guest checkout for multiple item
     Given I visit the web site as a guest user
     When I search for following Candies and ADD the cheapest candy of each
@@ -12,7 +12,7 @@ Feature:  As A User
     When I click on "Proceed to Checkout" button on Cart page
     Then I should be redirected to Login page
 
-  @complete
+  @smoke
   Scenario: Verify Guest checkout for single item
     Given I visit the web site as a guest user
     When I search for "cakes"
