@@ -26,3 +26,4 @@ Feature: Verify Search Results Page
     # Notes:
     # Verify that products are displayed with non broken images and links, price and quick peek links and that
     # first product price is less than second product and last product
+  #comment
