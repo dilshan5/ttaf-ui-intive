@@ -12,7 +12,7 @@ Feature:  As A User
     When I click on "Proceed to Checkout" button on Cart page
     Then I should be redirected to Login page
 
-  @smoke
+  @regression
   Scenario: Verify Guest checkout for single item
     Given I visit the web site as a guest user
     When I search for "cakes"

@@ -7,7 +7,7 @@ Feature: Verify Search Results Page
     Then I should be in Search Result page
     And Page should have search keyword as "snickers"
 
-  @regression
+  @smoke
   Scenario Outline: Home page -  Invalid Search strings validation
     Given I visit the web site as a guest user
     When I search for "<search_string>"
