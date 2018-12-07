@@ -19,10 +19,10 @@ import java.util.List;
  */
 public class SearchResultsPageSteps {
     private static final Logger LOGGER = Logger.getLogger(String.valueOf(SearchResultsPageSteps.class));
-    RemoteWebDriver driver = DriverManager.getDriver();
-    SearchResultsPage searchResultsPage;
-    AmazonHomePage amazonHomePage;
-    ProductDisplayPage productDisplayPage;
+    private RemoteWebDriver driver = DriverManager.getDriver();
+    private SearchResultsPage searchResultsPage;
+    private AmazonHomePage amazonHomePage;
+    private ProductDisplayPage productDisplayPage;
 
     @Then("^I should be in Search Result page$")
     public void i_should_be_in_page() throws Throwable {

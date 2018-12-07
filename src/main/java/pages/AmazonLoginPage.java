@@ -11,7 +11,7 @@ import panels.AmazonHeaderPanel;
  * Created by DilshanF on 11/8/2018.
  */
 public class AmazonLoginPage extends BasicPage {
-    public AmazonHeaderPanel amazonHeaderPanel;
+    private AmazonHeaderPanel amazonHeaderPanel;
 
     @FindBy(id = "signInSubmit")
     private WebElement signIn_button;

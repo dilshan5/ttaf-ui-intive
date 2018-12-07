@@ -13,8 +13,8 @@ import pages.OfferListingPage;
  */
 public class OfferListingPageSteps {
     private static final Logger LOGGER = Logger.getLogger(String.valueOf(OfferListingPageSteps.class));
-    RemoteWebDriver driver = DriverManager.getDriver();
-    OfferListingPage offerListingPage;
+    private RemoteWebDriver driver = DriverManager.getDriver();
+    private OfferListingPage offerListingPage;
 
     @Then("^I should redirect to OfferListing page$")
     public void i_should_redirect_to_OfferListing_page() throws Throwable {

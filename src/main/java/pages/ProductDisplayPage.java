@@ -20,8 +20,8 @@ import java.util.logging.Logger;
 public class ProductDisplayPage extends BasicPage {
     private static final Logger LOGGER = Logger.getLogger(String.valueOf(ProductDisplayPage.class));
     private WebDriverWait wait = new WebDriverWait(driver, 60);
-    public AmazonHeaderPanel amazonHeaderPanel;
-    public OfferListingPage offerListingPage;
+    private AmazonHeaderPanel amazonHeaderPanel;
+    private OfferListingPage offerListingPage;
 
     @FindBy(id = "add-to-cart-button")
     private WebElement add_to_cart_button;

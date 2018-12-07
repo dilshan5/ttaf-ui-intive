@@ -14,8 +14,8 @@ import pages.AmazonHomePage;
  */
 public class AmazonHomePageSteps {
     private static final Logger LOGGER = Logger.getLogger(String.valueOf(AmazonHomePageSteps.class));
-    AmazonHomePage amazonHomePage;
-    RemoteWebDriver driver = DriverManager.getDriver();
+    private AmazonHomePage amazonHomePage;
+    private RemoteWebDriver driver = DriverManager.getDriver();
 
     @Given("^I visit the web site as a guest user$")
     public void i_visit_the_web_site_as_a_guest_user() throws Throwable {

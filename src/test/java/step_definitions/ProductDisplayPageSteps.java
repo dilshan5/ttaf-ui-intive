@@ -14,8 +14,8 @@ import pages.ProductDisplayPage;
  */
 public class ProductDisplayPageSteps {
     private static final Logger LOGGER = Logger.getLogger(String.valueOf(ProductDisplayPageSteps.class));
-    ProductDisplayPage productDisplayPage;
-    RemoteWebDriver driver = DriverManager.getDriver();
+    private ProductDisplayPage productDisplayPage;
+    private RemoteWebDriver driver = DriverManager.getDriver();
 
     @Then("^I should redirect to PDP page$")
     public void i_should_redirect_to_PDP_page() throws Throwable {

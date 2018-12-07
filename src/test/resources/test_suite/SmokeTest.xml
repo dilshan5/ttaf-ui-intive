@@ -12,9 +12,6 @@
         <listener class-name="com.automation.qa.ttafuicore.listener.WebDriverListener"/>
     </listeners>
 
- <!--   <parameter name="system.info" value="runner.MySystemInfo"/>
-    <parameter name="report.config" value="src/test/resources/config/extent-config.xml"/>-->
-
     <test name="SmokeTest - Windows Chrome Browser">
         <!-- If you want to be more specific, replace this with a list of test classes you'd like to run -->
         <parameter name="browserName" value="chrome"/>

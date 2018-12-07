@@ -7,7 +7,7 @@
     <artifactId>ttaf-ui-intive</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <ttaf.ui.core.version>1.0.5-SNAPSHOT</ttaf.ui.core.version>
+        <ttaf.ui.core.version>1.0.6-SNAPSHOT</ttaf.ui.core.version>
         <maven.surefire.plugin>2.21.0</maven.surefire.plugin>
     </properties>
     <dependencies>
@@ -15,11 +15,6 @@
             <groupId>com.automation.qa</groupId>
             <artifactId>ttaf-ui-core</artifactId>
             <version>${ttaf.ui.core.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>4.0.0</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -32,12 +27,12 @@
             <version>1.2.5</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
             <version>3.1.2</version>
             <scope>provided</scope>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>

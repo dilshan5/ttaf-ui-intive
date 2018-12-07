@@ -12,7 +12,7 @@ import panels.AmazonHeaderPanel;
  */
 public class OfferListingPage extends BasicPage {
 
-    public AmazonHeaderPanel amazonHeaderPanel;
+    private AmazonHeaderPanel amazonHeaderPanel;
 
     @FindBy(className = "a-button-input")
     private WebElement add_to_cart_button;

@@ -13,8 +13,8 @@ import pages.AmazonLoginPage;
  */
 public class AmazonLoginPageSteps {
     private static final Logger LOGGER = Logger.getLogger(String.valueOf(AmazonLoginPageSteps.class));
-    RemoteWebDriver driver = DriverManager.getDriver();
-    AmazonLoginPage amazonLoginPage;
+    private RemoteWebDriver driver = DriverManager.getDriver();
+    private AmazonLoginPage amazonLoginPage;
 
     @Then("^I should be redirected to Login page$")
     public void i_should_be_redirected_to_page() throws Throwable {

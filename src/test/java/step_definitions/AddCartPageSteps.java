@@ -12,8 +12,8 @@ import pages.AddCartPage;
  */
 public class AddCartPageSteps {
     private static final Logger LOGGER = Logger.getLogger(String.valueOf(AddCartPageSteps.class));
-    RemoteWebDriver driver = DriverManager.getDriver();
-    AddCartPage addCartPage;
+    private RemoteWebDriver driver = DriverManager.getDriver();
+    private AddCartPage addCartPage;
 
     @When("^I click on \"([^\"]*)\" button on Cart page$")
     public void i_click_on_button_on_Cart_page(String arg1) throws Throwable {
