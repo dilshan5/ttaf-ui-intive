@@ -1,8 +1,8 @@
 package pages;
 
-import com.trivago.qa.ttafuicore.page.BasicPage;
-import org.openqa.selenium.WebDriver;
+import com.automation.qa.ttafuicore.page.BasicPage;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import panels.AmazonHeaderPanel;
@@ -12,7 +12,7 @@ import panels.AmazonHeaderPanel;
  */
 public class OfferListingPage extends BasicPage {
 
-    public AmazonHeaderPanel amazonHeaderPanel;
+    private AmazonHeaderPanel amazonHeaderPanel;
 
     @FindBy(className = "a-button-input")
     private WebElement add_to_cart_button;
@@ -23,7 +23,7 @@ public class OfferListingPage extends BasicPage {
      * @param driver
      * @throws Exception
      */
-    public OfferListingPage(WebDriver driver) throws Exception {
+    public OfferListingPage(RemoteWebDriver driver) throws Exception {
         super(driver);
         //Initialize Elements
         PageFactory.initElements(driver, this);

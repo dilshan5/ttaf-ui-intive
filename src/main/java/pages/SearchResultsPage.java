@@ -1,9 +1,9 @@
 package pages;
 
-import com.trivago.qa.ttafuicore.page.BasicPage;
+import com.automation.qa.ttafuicore.page.BasicPage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,14 +15,13 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 /**
  * Created by DilshanF on 11/7/2018.
  */
 public class SearchResultsPage extends BasicPage {
     private static final Logger LOGGER = Logger.getLogger(String.valueOf(SearchResultsPage.class));
-    public AmazonHeaderPanel amazonHeaderPanel;
-    private WebDriverWait wait = new WebDriverWait(driver, 60);
+    private AmazonHeaderPanel amazonHeaderPanel;
+    private WebDriverWait wait = new WebDriverWait(driver, 100);
 
     @FindBy(id = "s-result-count")
     private WebElement search_keyword;
@@ -33,10 +32,10 @@ public class SearchResultsPage extends BasicPage {
     @FindBy(id = "s-results-list-atf")
     private WebElement products;
 
-    @FindBy(css = "select#sort.a-spacing-top-mini")
+    @FindBy(id = "sort")
     private WebElement sort_drop_down;
 
-    public SearchResultsPage(WebDriver driver) throws Exception {
+    public SearchResultsPage(RemoteWebDriver driver) throws Exception {
         super(driver);
         //Initialize Elements
         PageFactory.initElements(driver, this);
@@ -67,6 +66,7 @@ public class SearchResultsPage extends BasicPage {
 
     /**
      * Select value from dropdown menu
+     *
      * @param type
      * @throws Exception
      */

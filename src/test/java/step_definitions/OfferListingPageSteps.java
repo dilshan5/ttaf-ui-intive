@@ -1,23 +1,25 @@
 package step_definitions;
 
-import com.trivago.qa.ttafuicore.test.TestBase;
+import com.automation.qa.ttafuicore.driver.DriverManager;
 import cucumber.api.java.en.Then;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
+import org.testng.Reporter;
 import pages.OfferListingPage;
-import pages.ProductDisplayPage;
-
-import java.util.logging.Logger;
 
 /**
  * Created by DilshanF on 11/7/2018.
  */
-public class OfferListingPageSteps extends TestBase {
+public class OfferListingPageSteps {
     private static final Logger LOGGER = Logger.getLogger(String.valueOf(OfferListingPageSteps.class));
-    OfferListingPage offerListingPage;
+    private RemoteWebDriver driver = DriverManager.getDriver();
+    private OfferListingPage offerListingPage;
 
     @Then("^I should redirect to OfferListing page$")
     public void i_should_redirect_to_OfferListing_page() throws Throwable {
-        offerListingPage = new OfferListingPage(getDriver());
+        Reporter.log("Then I should redirect to OfferListing page");
+        offerListingPage = new OfferListingPage(driver);
         boolean pageType = offerListingPage.verify_Current_Page();
         Assert.assertTrue(pageType, "Navigate to invalid Page.");
         LOGGER.info("I am on the Offer Listing Page");

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TTAF - SmokeTest - Cross Browser in Distributed" parallel="tests" verbose="1"
+       configfailurepolicy="continue" thread-count="5">
+    <listeners>
+        <!--
+            This TestNG listener takes care of setting up and tearing down the Remote Selenium driver,
+            and it also changes test names in the final TestNG HTML report.
+            You need to set Grid Mode 'on' in configuration property file
+        -->
+        <listener class-name="com.automation.qa.ttafuicore.listener.WebDriverListener"/>
+    </listeners>
+
+<!--    <parameter name="system.info" value="runner.MySystemInfo"/>
+    <parameter name="report.config" value="src/test/resources/config/extent-config.xml"/>-->
+
+    <test name="SmokeTest - Windows Chrome Browser">
+        <!-- If you want to be more specific, replace this with a list of test classes you'd like to run -->
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="browserVersion" value="ANY"/>
+        <parameter name="platform" value="windows"/>
+        <classes>
+            <class name="runner.SmokeTest"/>
+        </classes>
+    </test>
+    <test name="SmokeTest - Linux Chrome Browser">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="browserVersion" value="ANY"/>
+        <parameter name="platform" value="linux"/>
+        <classes>
+            <class name="runner.SmokeTest"/>
+        </classes>
+    </test>
+    <test name="SmokeTest - Mac Safari Browser">
+        <parameter name="browserName" value="safari"/>
+        <parameter name="browserVersion" value="ANY"/>
+        <parameter name="platform" value="mac"/>
+        <classes>
+            <class name="runner.SmokeTest"/>
+        </classes>
+    </test>
+</suite>

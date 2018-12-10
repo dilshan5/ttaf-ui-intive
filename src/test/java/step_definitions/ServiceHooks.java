@@ -1,20 +1,25 @@
 package step_definitions;
 
-import com.trivago.qa.ttafuicore.test.TestBase;
+import com.automation.qa.ttafuicore.driver.DriverManager;
+import com.automation.qa.ttafuicore.util.Constant;
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
-import cucumber.api.java.Before;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 /**
  * Created by DilshanF on 11/7/2018.
  */
-public class ServiceHooks extends TestBase {
-    @Before
-    public void before() throws Exception {
-        initializeBaseSetup();
-    }
+public class ServiceHooks {
+    private static final Logger LOGGER = Logger.getLogger(String.valueOf(ServiceHooks.class));
 
     @After
-    public void after() throws Exception {
-        tearDown();
+    public void after(Scenario scenario) throws Exception {
+        RemoteWebDriver driver = DriverManager.getDriver();
+        if (driver != null) {
+            Constant.SCENARIO_NAME = scenario.getName(); //set the scenario name to create a node in Reporter
+            driver.quit();
+            LOGGER.info("TTAF MESSAGE: Closing the " + Constant.BROWSER_NAME + " browser...");
+        }
     }
 }

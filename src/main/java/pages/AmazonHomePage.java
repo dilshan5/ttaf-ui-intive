@@ -1,7 +1,7 @@
 package pages;
 
-import com.trivago.qa.ttafuicore.page.BasicPage;
-import org.openqa.selenium.WebDriver;
+import com.automation.qa.ttafuicore.page.BasicPage;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import panels.AmazonHeaderPanel;
 
@@ -18,7 +18,7 @@ public class AmazonHomePage extends BasicPage {
      * @param driver
      * @throws Exception
      */
-    public AmazonHomePage(WebDriver driver) throws Exception {
+    public AmazonHomePage(RemoteWebDriver driver) throws Exception {
         super(driver);
         //Initialize Elements
         PageFactory.initElements(driver, this);
