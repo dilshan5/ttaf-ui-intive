@@ -2,7 +2,7 @@
 This is a Cucumber-Java Project. Followed BDD approach
 
 # Getting Started
- First you need to clone this project into your local machine. After that you can open configuration.properties file and set your desired browser for testing.
+ First you need to clone the 'working' branch of this project into your local machine. After that you can open configuration.properties file and set your desired browser for testing.
 
 # Running the tests
 In the terminal window type following command,
