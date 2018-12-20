@@ -11,13 +11,13 @@ Goto Feature file and right mouse click on the scenario which you want to run.
 # Running the Test Suite
 In the terminal window type following command,
   
-  mvn clean install
+    mvn clean install
   
  Make sure that you successfully import all the maven dependencies. After that run the following command to start the execution,
 
   mvn clean -P<suite_name>
   
- e.g:  mvn clean -PSmokeTest
+    mvn clean -PSmokeTest
   
 # Edit existing Test suite
 
@@ -27,4 +27,11 @@ You can change the Platform, Browser name and Browser version according to your 
 
 Set Up the selenium grid and change the Selenium grid URL in the configuration.properties file. Then run your distributed test suite.
   
+# View Allure report 
+
+First you need to download allure from https://github.com/allure-framework/allure2/releases
+
+Then add the bin folder location into your PATH variable.Once you run your test suite, 'allure-results' directory will create inside target directory. Copy the path of it. Then open the command prompt. Run following command,
+
+      allure serve <location to your allure-results directory>
   
