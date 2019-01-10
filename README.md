@@ -9,15 +9,12 @@ This is a Cucumber-Java Project. Followed BDD approach
 Goto Feature file and right mouse click on the scenario which you want to run.
 
 # Running the Test Suite
-In the terminal window type following command,
-  
-    mvn clean install
   
  Make sure that you successfully import all the maven dependencies. After that run the following command to start the execution,
 
-  mvn clean -P<suite_name>
+  mvn clean install -P<suite_name>
   
-    mvn clean -PSmokeTest
+    mvn clean install -PSmokeTest
   
 # Edit existing Test suite
 
