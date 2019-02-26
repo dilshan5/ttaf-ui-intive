@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
                 "html:target/cucumber-reports"
         },
         monochrome = false,//Don't colour terminal output.
-        tags = {"@smoke"}
+        tags = {"@smoke","~@Issue"}
 )
 @Test
 public class SmokeTest extends CustomAbstractTestNGCucumberTests {

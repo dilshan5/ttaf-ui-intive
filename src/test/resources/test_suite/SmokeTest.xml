@@ -3,7 +3,7 @@
 
 <suite name="TTAF - SmokeTest - Cross Browser Testing in Parallel" parallel="tests" verbose="1"
        configfailurepolicy="continue"
-       thread-count="5">
+       thread-count="3">
     <listeners>
         <!--
         This TestNG listener takes care of setting up and tearing down the Remote Selenium driver.

@@ -1,6 +1,6 @@
 Feature: Verify Search Results Page
 
-  @smoke @regression
+  @smoke @regression @Severity(SeverityLevel.CRITICAL)
   Scenario: Home page -  Verify Search keyword is displayed
     Given I visit the web site as a guest user
     And I search for "snickers"
