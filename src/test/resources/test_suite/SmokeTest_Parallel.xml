@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TTAF - SmokeTest - Cross Browser Testing in Parallel" parallel="tests" verbose="1"
+       configfailurepolicy="continue"
+       thread-count="5">
+    <listeners>
+        <!--
+        This TestNG listener takes care of setting up and tearing down the Remote Selenium driver.
+        You need to set Grid Mode 'off' in configuration property file
+    -->
+        <listener class-name="com.automation.qa.ttafuicore.listener.WebDriverListener"/>
+    </listeners>
+
+    <test name="SmokeTest - Windows Chrome Browser">
+        <!-- If you want to be more specific, replace this with a list of test classes you'd like to run -->
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="browserVersion" value="ANY"/>
+        <parameter name="platform" value="windows"/>
+        <classes>
+            <class name="runner.SmokeTest"/>
+        </classes>
+    </test>
+
+    <test name="SmokeTest - Windows Firefox Browser">
+        <!-- If you want to be more specific, replace this with a list of test classes you'd like to run -->
+        <parameter name="browserName" value="firefox"/>
+        <parameter name="browserVersion" value="ANY"/>
+        <parameter name="platform" value="windows"/>
+        <classes>
+            <class name="runner.SmokeTest"/>
+        </classes>
+    </test>
+</suite>

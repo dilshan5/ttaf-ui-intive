@@ -1,13 +1,13 @@
 Feature: Verify Search Results Page
 
-  @smoke @regression
+  @smoke @regression @TestCaseId("TC-41") @SeverityLevel.CRITICAL @Issue("JIRA-BIG-5692")
   Scenario: Home page -  Verify Search keyword is displayed
     Given I visit the web site as a guest user
     And I search for "snickers"
     Then I should be in Search Result page
     And Page should have search keyword as "snickers"
 
-  @smoke
+  @regression @TestCaseId("TC-37") @SeverityLevel.NORMAL
   Scenario Outline: Home page -  Invalid Search strings validation
     Given I visit the web site as a guest user
     When I search for "<search_string>"
@@ -17,7 +17,7 @@ Feature: Verify Search Results Page
       | xcvdv                              |
       | <script>alert('hi there')</script> |
 
-  @smoke @regression
+  @regression @smoke @TestCaseId("TC-30") @SeverityLevel.MINOR
   Scenario: Search Result Page - Verify Sort By functionality Price (low-high)
     Given I visit the web site as a guest user
     When I search for "twix"

@@ -1,8 +1,6 @@
-Feature:  As A User
-  I want to search for sweets on amazon
-  So I can find my preferred brands.
+Feature:  As A User I want to search for sweets on amazon So I can find my preferred brands.
 
-  @regression
+  @regression @TestCaseId("TC-03") @SeverityLevel.NORMAL
   Scenario: Verify Guest checkout for multiple item
     Given I visit the web site as a guest user
     When I search for following Candies and ADD the cheapest candy of each
@@ -12,7 +10,7 @@ Feature:  As A User
     When I click on "Proceed to Checkout" button on Cart page
     Then I should be redirected to Login page
 
-  @regression
+  @regression @smoke @SeverityLevel.BLOCKER @Issue("JIRA-BIG-1257") @TestCaseId("TC-06")
   Scenario: Verify Guest checkout for single item
     Given I visit the web site as a guest user
     When I search for "cakes"
