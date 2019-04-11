@@ -1,6 +1,6 @@
 Feature:  As A User I want to search for sweets on amazon So I can find my preferred brands.
 
-  @regression @TestCaseId("TC-03") @SeverityLevel.NORMAL
+  @regression @tmsLink=TC-03 @severity=normal
   Scenario: Verify Guest checkout for multiple item
     Given I visit the web site as a guest user
     When I search for following Candies and ADD the cheapest candy of each
@@ -10,7 +10,7 @@ Feature:  As A User I want to search for sweets on amazon So I can find my prefe
     When I click on "Proceed to Checkout" button on Cart page
     Then I should be redirected to Login page
 
-  @regression @smoke @SeverityLevel.BLOCKER @Issue("JIRA-BIG-1257") @TestCaseId("TC-06")
+  @regression @smoke @severity=blocker @issue=BIG-38916 @tmsLink=TC-06
   Scenario: Verify Guest checkout for single item
     Given I visit the web site as a guest user
     When I search for "cakes"

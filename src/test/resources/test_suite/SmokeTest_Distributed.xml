@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="TTAF - SmokeTest - Cross Browser in Distributed" parallel="tests" verbose="1"
-       configfailurepolicy="continue" thread-count="5">
+       configfailurepolicy="continue" thread-count="3">
     <listeners>
         <!--
             This TestNG listener takes care of setting up and tearing down the Remote Selenium driver,

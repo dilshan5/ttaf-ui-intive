@@ -65,11 +65,11 @@ public class SearchResultsPageSteps {
     @When("^I click on \"([^\"]*)\" Product Thumbnail in search results page$")
     public void i_click_on_Product_Thumbnail_in_search_results_page(String step) throws Throwable {
         Reporter.log("And I click on '" + step + "' Product Thumbnail in search results page");
-        switch (step) {
+   /*     switch (step) {
             case "first":
               //  searchResultsPage.click_on_any_product(0);
                 break;
-        }
+        }*/
     /*    productDisplayPage = new ProductDisplayPage(driver);
         //If there are 'Shop by Category' is available for the searchKey
         if (!(productDisplayPage.verify_Current_Page())) {

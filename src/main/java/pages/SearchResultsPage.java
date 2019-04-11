@@ -43,7 +43,7 @@ public class SearchResultsPage extends BasicPage {
     }
 
     public boolean verify_Current_Page() throws Exception {
-        return driver.getCurrentUrl().toLowerCase().contains("/s/ref=");
+        return driver.getCurrentUrl().toLowerCase().contains("&ref=");
     }
 
     public boolean verify_SearchResults_Keyword(String key) throws Exception {
