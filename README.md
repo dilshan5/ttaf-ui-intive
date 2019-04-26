@@ -14,7 +14,13 @@ Goto Feature file and right mouse click on the scenario which you want to run.
 
   mvn clean install -P<suite_name>
   
+  To run scenarios in parallel,
+  
     mvn clean install -PSmokeTest
+    
+  To run scenarios in cross browser
+  
+    mvn clean install -PSmokeTest_Parallel
   
 # Edit existing Test suite
 
@@ -22,7 +28,9 @@ You can change the Platform, Browser name and Browser version according to your 
 
 # Enable Selenium grid
 
-Set Up the selenium grid and change the Selenium grid URL in the configuration.properties file. Then run your distributed test suite.
+Set Up the selenium grid and change the Selenium grid URL in the configuration.properties file. Also Turn On the grid-mode. Then run your distributed test suite.
+
+    mvn clean install -PSmokeTest_Distributed
   
 # View Allure report 
 
