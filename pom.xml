@@ -7,7 +7,7 @@
     <artifactId>ttaf-ui-intive</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <ttaf.ui.core.version>1.0.6-SNAPSHOT</ttaf.ui.core.version>
+        <ttaf.ui.core.version>1.0.7-SNAPSHOT</ttaf.ui.core.version>
         <maven.surefire.plugin>2.21.0</maven.surefire.plugin>
         <aspectj.version>1.8.10</aspectj.version>
     </properties>
