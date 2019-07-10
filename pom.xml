@@ -7,7 +7,7 @@
     <artifactId>ttaf-ui-intive</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <ttaf.ui.core.version>1.0.7-SNAPSHOT</ttaf.ui.core.version>
+        <ttaf.ui.core.version>1.0.6-SNAPSHOT</ttaf.ui.core.version>
         <maven.surefire.plugin>2.21.0</maven.surefire.plugin>
         <aspectj.version>1.8.10</aspectj.version>
     </properties>
@@ -33,12 +33,12 @@
             <artifactId>allure-cucumber4-jvm</artifactId>
             <version>2.10.0</version>
         </dependency>
-<!--        <dependency>
-        <groupId>io.qameta.allure</groupId>
-        <artifactId>allure-testng</artifactId>
-        <version>2.10.0</version>
-        <scope>test</scope>
-    </dependency>-->
+        <!--        <dependency>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-testng</artifactId>
+                <version>2.10.0</version>
+                <scope>test</scope>
+            </dependency>-->
     </dependencies>
     <build>
         <plugins>
@@ -157,9 +157,10 @@
             </build>
         </profile>
     </profiles>
-   <!-- <repositories>
+    <repositories>
         <repository>
             <id>ttaf-ui-core-mvn-repo</id>
+            <name>TTAF Internal Repository</name>
             <url>https://raw.github.com/dilshan5/ttaf-ui-core/mvn-repo/</url>
             <layout>default</layout>
             <releases>
@@ -171,11 +172,12 @@
                 <updatePolicy>always</updatePolicy>
             </snapshots>
         </repository>
-    </repositories>-->
+    </repositories>
     <!--specify a remote location of where Maven can find new plugins-->
- <!--   <pluginRepositories>
+    <pluginRepositories>
         <pluginRepository>
             <id>ttaf-ui-core-mvn-repo</id>
+            <name>TTAF Internal Repository</name>
             <url>https://raw.github.com/dilshan5/ttaf-ui-core/mvn-repo/</url>
             <layout>default</layout>
             <releases>
@@ -187,7 +189,7 @@
                 <updatePolicy>always</updatePolicy>
             </snapshots>
         </pluginRepository>
-    </pluginRepositories>-->
+    </pluginRepositories>
     <developers>
         <developer>
             <id>dilshanf</id>
