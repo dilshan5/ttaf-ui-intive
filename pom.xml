@@ -73,7 +73,7 @@
             </build>
         </profile>
         <profile>
-            <id>SmokeTest</id>
+            <id>SmokeTest_Parallel</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
@@ -86,7 +86,7 @@
                         <configuration>
                             <testFailureIgnore>true</testFailureIgnore>
                             <suiteXmlFiles>
-                                <suiteXmlFile>src/test/resources/test_suite/SmokeTest.xml</suiteXmlFile>
+                                <suiteXmlFile>src/test/resources/test_suite/SmokeTest_Parallel.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
