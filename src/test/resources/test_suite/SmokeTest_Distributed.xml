@@ -40,4 +40,12 @@
             <class name="runner.SmokeTest"/>
         </classes>
     </test>
+    <test name="SmokeTest - Internet Explorer Browser">
+        <parameter name="browserName" value="ie"/>
+        <parameter name="browserVersion" value="ANY"/>
+        <parameter name="platform" value="windows"/>
+        <classes>
+            <class name="runner.SmokeTest"/>
+        </classes>
+    </test>
 </suite>
