@@ -5,7 +5,7 @@ This is a Cucumber-Java Project. Followed BDD approach
  First you need to clone the 'master' branch of this project into your local machine. After that you can open configuration.properties file and set your desired browser for testing.
  
  # Prerequisites
- You have to install Firefox borwser and Chrome browser in your machine.
+ You have to install Firefox borwser and Chrome browser in your machine. And also change the test plan parameters as needed.
  
 # Run individual Test Scenario
 
