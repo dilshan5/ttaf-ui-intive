@@ -40,7 +40,7 @@
             <class name="runner.SmokeTest"/>
         </classes>
     </test>
-    <test name="SmokeTest - Microsoft Edge Browser">
+    <test name="SmokeTest - Microsoft Edge (EdgeHTML) Browser">
         <parameter name="browserName" value="edge"/>
         <parameter name="browserVersion" value="ANY"/>
         <parameter name="platform" value="windows"/>
