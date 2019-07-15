@@ -5,7 +5,12 @@ This is a Cucumber-Java Project. Followed BDD approach
  First you need to clone the 'master' branch of this project into your local machine. After that you can open configuration.properties file and set your desired browser for testing.
  
  # Prerequisites
- You have to install Firefox borwser and Chrome browser in your machine. And also change the test plan parameters as needed.
+
+Supportted Browsers : Chrome, Firefox, Internet Explorer(IE), Microsoft Edge (EdgeHTML), Safari
+
+Make sure that you have already installed the browser you want to execute in your local machine. And also change the test plan parameters as needed.
+
+Note : "Enhanced Protected Mode" must be disabled for IE 10 and higher.
  
 # Run individual Test Scenario
 
