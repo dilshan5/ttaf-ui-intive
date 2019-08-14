@@ -10,7 +10,9 @@ Supportted Browsers : Chrome, Firefox, Internet Explorer(IE), Microsoft Edge (Ed
 
 Make sure that you have already installed the browser you want to execute in your local machine. And also change the test plan parameters as needed.
 
-Note : "Enhanced Protected Mode" must be disabled for IE 10 and higher.
+Notes : 
+ - "Enhanced Protected Mode" must be disabled for IE 10 and higher.
+ - Check your chrome browser version and chrome driver compatibility (refer 'driver' folder). If it is not compatible download        chrome driver and replace it.
  
 # Run individual Test Scenario
 
