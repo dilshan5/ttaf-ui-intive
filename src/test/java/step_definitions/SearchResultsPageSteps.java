@@ -29,7 +29,7 @@ public class SearchResultsPageSteps {
         Reporter.log("Then I should be in Search Result page");
         searchResultsPage = new SearchResultsPage(driver);
         boolean pageType = searchResultsPage.verify_Current_Page();
-        Assert.assertTrue(false, "Navigate to invalid Page.");
+        Assert.assertTrue(pageType, "Navigate to invalid Page.");
         LOGGER.info("I am on the Search Result page");
     }
 
