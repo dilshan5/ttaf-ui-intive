@@ -31,4 +31,14 @@
             <class name="runner.SmokeTest"/>
         </classes>
     </test>
+
+    <test name="SmokeTest - Windows IE Browser">
+        <!-- If you want to be more specific, replace this with a list of test classes you'd like to run -->
+        <parameter name="browserName" value="ie"/>
+        <parameter name="browserVersion" value="ANY"/>
+        <parameter name="platform" value="windows"/>
+        <classes>
+            <class name="runner.SmokeTest"/>
+        </classes>
+    </test>
 </suite>
