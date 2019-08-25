@@ -156,7 +156,7 @@
             </build>
         </profile>
     </profiles>
-    <repositories>
+<!--    <repositories>
         <repository>
             <id>ttaf-ui-core-mvn-repo</id>
             <name>TTAF Internal Repository</name>
@@ -172,7 +172,7 @@
             </snapshots>
         </repository>
     </repositories>
-    <!--specify a remote location of where Maven can find new plugins-->
+    &lt;!&ndash;specify a remote location of where Maven can find new plugins&ndash;&gt;
     <pluginRepositories>
         <pluginRepository>
             <id>ttaf-ui-core-mvn-repo</id>
@@ -188,7 +188,7 @@
                 <updatePolicy>always</updatePolicy>
             </snapshots>
         </pluginRepository>
-    </pluginRepositories>
+    </pluginRepositories>-->
     <developers>
         <developer>
             <id>dilshanf</id>
