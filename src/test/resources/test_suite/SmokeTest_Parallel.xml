@@ -12,21 +12,21 @@
         <listener class-name="com.automation.qa.ttafuicore.listener.WebDriverListener"/>
     </listeners>
 
-    <test name="SmokeTest - Linux Chrome Browser">
+    <test name="SmokeTest - Windows Chrome Browser">
         <!-- If you want to be more specific, replace this with a list of test classes you'd like to run -->
         <parameter name="browserName" value="chrome"/>
         <parameter name="browserVersion" value="76.0"/>
-        <parameter name="platform" value="linux"/>
+        <parameter name="platform" value="windows"/>
         <classes>
             <class name="runner.SmokeTest"/>
         </classes>
     </test>
 
-    <test name="SmokeTest - Linux Firefox Browser">
+    <test name="SmokeTest - Windows Firefox Browser">
         <!-- If you want to be more specific, replace this with a list of test classes you'd like to run -->
         <parameter name="browserName" value="firefox"/>
         <parameter name="browserVersion" value="68.0"/>
-        <parameter name="platform" value="linux"/>
+        <parameter name="platform" value="windows"/>
         <classes>
             <class name="runner.SmokeTest"/>
         </classes>
