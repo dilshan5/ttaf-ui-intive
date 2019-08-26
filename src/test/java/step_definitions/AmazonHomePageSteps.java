@@ -22,7 +22,7 @@ public class AmazonHomePageSteps {
         Reporter.log("Given I visit the web site as a guest user");
         amazonHomePage = new AmazonHomePage(driver);
         boolean pageTitle = amazonHomePage.check_HomePage_Page_Title();
-        Assert.assertTrue(false, "Expected Title is Not Display");
+        Assert.assertTrue(pageTitle, "Expected Title is Not Display");
         LOGGER.info("I am on Amazon Home page");
     }
 
