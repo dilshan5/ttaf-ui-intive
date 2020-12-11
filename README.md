@@ -6,19 +6,29 @@ This is a Cucumber-Java Project. Followed BDD approach
  
  # Prerequisites
 
-Supportted Browsers : Chrome, Firefox, Internet Explorer(IE), Microsoft Edge (EdgeHTML), Safari
+Supported Browsers : Chrome, Firefox, Internet Explorer(IE), Microsoft Edge (EdgeHTML), Safari
 
-Make sure that you have already installed the browser you want to execute in your local machine. And also change the test plan parameters as needed.
+Make sure that you have already:
+* Installed the browser you want to execute in your local machine. 
+* Check your browser version and driver compatibility  `/src/test/resources/driver`
 
 Notes : 
  - "Enhanced Protected Mode" must be disabled for IE 10 and higher.
- - Check your chrome browser version and chrome driver compatibility (refer 'driver' folder). If it is not compatible download        chrome driver and replace it.
- 
-# Run individual Test Scenario
 
-Goto Feature file and right mouse click on the scenario which you want to run.
+# Edit existing Test suite
 
-# Running the Test Suite
+You can find the available test suites in `/src/test/resources/test_suite`
+
+You can change the Platform, Browser name and Browser version according to your local machine.
+
+Note:
+* Platform should be `linux` , `windows` or `mac`.
+
+# Running the Test Suite via XML file
+
+Goto SmokeTest.xml and configure your browser details and start Run.
+
+# Running the Test Suite via CLI
   
  Make sure that you successfully import all the maven dependencies. After that run the following command to start the execution,
 
@@ -32,10 +42,6 @@ Goto Feature file and right mouse click on the scenario which you want to run.
   
     mvn clean install -PSmokeTest_Parallel
   
-# Edit existing Test suite
-
-You can change the Platform, Browser name and Browser version according to your local machine.
-
 # Enable Selenium grid
 
 Set Up the selenium grid and change the Selenium grid URL in the configuration.properties file. Also Turn On the grid-mode. Then run your distributed test suite.
