@@ -21,8 +21,9 @@ You can find the available test suites in `/src/test/resources/test_suite`
 
 You can change the Platform, Browser name and Browser version according to your local machine.
 
-Note:
+Notes:
 * Platform should be `linux` , `windows` or `mac`.
+* Browser name should be `chrome` , `firefox`, `edge`, `ie` or `safari`.
 
 # Running the Test Suite via XML file
 

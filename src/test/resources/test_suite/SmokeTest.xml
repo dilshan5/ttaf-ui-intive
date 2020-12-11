@@ -15,7 +15,7 @@
     <test name="SmokeTest - Windows Chrome Browser">
         <!-- If you want to be more specific, replace this with a list of test classes you'd like to run -->
         <parameter name="browserName" value="chrome"/>
-        <parameter name="browserVersion" value="76.0"/>
+        <parameter name="browserVersion" value="86.0"/>
         <parameter name="platform" value="windows"/>
         <classes>
             <class name="runner.SmokeTest"/>
