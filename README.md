@@ -13,7 +13,13 @@ Make sure that you have already:
 * Check your browser version and driver compatibility  `/src/test/resources/driver`
 
 Notes : 
- - "Enhanced Protected Mode" must be disabled for IE 10 and higher.
+- "Enhanced Protected Mode" must be disabled for IE 10 and higher.
+- Firefox driver - https://github.com/mozilla/geckodriver/releases
+- Chrome driver - https://chromedriver.chromium.org/downloads
+
+## Open the ProjectT
+
+You can open the project by any IDE (Select `pom.xml` file when opening the project)
 
 # Edit existing Test suite
 
@@ -48,12 +54,31 @@ Goto SmokeTest.xml and configure your browser details and start Run.
 Set Up the selenium grid and change the Selenium grid URL in the configuration.properties file. Also Turn On the grid-mode. Then run your distributed test suite.
 
     mvn clean install -PSmokeTest_Distributed
-  
-# View Allure report 
 
-First you need to download allure from https://github.com/allure-framework/allure2/releases
+# View Allure report
 
-Then add the bin folder location into your PATH variable.Once you run your test suite, 'allure-results' directory will create inside target directory. Copy the path of it. Then open the command prompt. Run following command,
+## In Windows
 
-      allure serve <location to your allure-results directory>
+First, you need to download allure from https://github.com/allure-framework/allure2/releases
+
+Then add the bin folder location into your PATH variable.Once you run your test suite, 'allure-results' directory will create inside target directory. Copy the path of it. Then open the command prompt. Run the following command,
+
+``
+allure serve <location to your allure-results directory>
+``
+
+## In Ubuntu
+
+````
+curl -o allure-2.6.0.tgz -Ls https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/2.6.0/allure-2.6.0.tgz   
+sudo tar -zxvf allure-2.6.0.tgz -C /opt/   
+sudo ln -s /opt/allure-2.6.0/bin/allure /usr/bin/allure  
+allure --version 
+````
+
+Once you run your test suite, 'allure-results' directory will create inside target directory. Copy the path of it. Then open the command prompt. Run the following command,
+
+``
+allure serve <location to your allure-results directory>
+``
   
