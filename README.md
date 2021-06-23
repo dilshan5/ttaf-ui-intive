@@ -45,13 +45,13 @@ Goto SmokeTest.xml and configure your browser details and start Run.
   
     mvn clean install -PSmokeTest
     
-  To run scenarios in cross browser
+  To run scenarios in cross browsers at the same time
   
     mvn clean install -PSmokeTest_Parallel
   
-# Enable Selenium grid
+# Enable Selenium grid - To run scenarios in cross browsers in different Operating Systems at the same time.
 
-Set Up the selenium grid and change the Selenium grid URL in the configuration.properties file. Also Turn On the grid-mode. Then run your distributed test suite.
+Set Up the selenium grid. Change the Selenium grid URL in the configuration.properties file.Also, Turn On the grid-mode. Then run your distributed test suite.
 
     mvn clean install -PSmokeTest_Distributed
 
